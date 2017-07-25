@@ -49,7 +49,6 @@ app.get('/',(req,res)=>{
 
     res.render('home',{
        pageTitle:'Home Page',
-
         welcomeMessage: 'Welcome su su!'
     });
 });
@@ -60,6 +59,14 @@ app.get('/about',(req,res)=>{
 
     });
 });
+
+app.get('/project',(req,res)=>{
+    res.render('project.hbs',{
+        pageTitle :'Project Page'
+
+    });
+});
+
 
 
 // /bad -send back json with errorMessage
